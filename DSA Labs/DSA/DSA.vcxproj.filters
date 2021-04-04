@@ -39,6 +39,12 @@
     <ClCompile Include="BitStream.cpp">
       <Filter>Source Files\_Do_Not_Change</Filter>
     </ClCompile>
+    <ClCompile Include="DynArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynArray.h">

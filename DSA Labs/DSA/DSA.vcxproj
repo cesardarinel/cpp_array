@@ -142,7 +142,9 @@
     <ClCompile Include="BitStream.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="DSA_Main.cpp" />
+    <ClCompile Include="DynArray.cpp" />
     <ClCompile Include="HashFunctions.cpp" />
+    <ClCompile Include="Sorting.cpp" />
     <ClCompile Include="TestSuite.cpp" />
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
