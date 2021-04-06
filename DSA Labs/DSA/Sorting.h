@@ -3,7 +3,7 @@
 
 #pragma once
 
-#if LAB_1
+#if LAB_1 
 // Bubble sort an array in ascending order
 //		This is a templated function
 //
@@ -73,7 +73,7 @@ int SequentialSearch(const Type& _val, const Type* _arr, int _size) {
 //		_maxIndex	Maximum index in searching area
 //
 // Return: The index _val was found at (or -1 if not present)
-template<typename Type>
+template<typ ename Type>
 int BinarySearch(const Type& _val, const Type* _arr, int _minIndex, int _maxIndex) {
 	
 }
