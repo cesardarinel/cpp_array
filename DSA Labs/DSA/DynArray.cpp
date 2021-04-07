@@ -1,5 +1,13 @@
 #include "DynArray.h"
 
-int DynArray::Size() const {
-	return mArray.size();
+DynArray::DynArray<T>::Type& operator[](int _index) {
+
 }
+
+/*int Size() {
+	
+}
+
+int Capacity() {
+
+}*/

@@ -18,7 +18,7 @@ public:
 	// Default constructor
 	//		Creates a new object
 	// In:	_startingCap		An initial size to start the array at (optional)
-	DynArray(unsigned int _startingCap = 0) {
+	DynArray(unsigned int _startingCap = 0) : mCapacity{ _startingCap } {
 		
 	}
 

@@ -19,12 +19,12 @@
 /******************/
 /* Lab 2 - vector */
 /******************/
-#define LAB_2 1
+#define LAB_2 0
 
 #if LAB_2
 
 #define PALINDROME_NUMBER			0
-#define VECTOR_FILL_FILE			1
+#define VECTOR_FILL_FILE			0
 #define VECTOR_FILL_ARRAY			0
 #define VECTOR_CLEAR				0
 #define VECTOR_SORT					0
@@ -41,7 +41,7 @@
 
 #if LAB_3							
 #define DYNARRAY_CTOR				1
-#define DYNARRAY_COPY_CTOR			0
+#define DYNARRAY_COPY_CTOR			1
 #define DYNARRAY_ASSIGNMENT_OP		0
 #define DYNARRAY_BRACKET_OP			0
 #define DYNARRAY_ACCESSORS			0

@@ -1,4 +1,4 @@
-#include "Sorting.h"
+/*#include "Sorting.h"
 
 void BubbleSort(Type* _arr, int _size) {
     for (int i = 0; i <= _size; i++) {
@@ -9,7 +9,7 @@ void BubbleSort(Type* _arr, int _size) {
         }
     }
     
-    /*procedure bubbleSort(A : list of sortable items)
+    procedure bubbleSort(A : list of sortable items)
     n := length(A)
     repeat
         swapped := false
@@ -22,5 +22,4 @@ void BubbleSort(Type* _arr, int _size) {
         n := n - 1
     until not swapped
 end procedure
-	*/
-}
+}*/

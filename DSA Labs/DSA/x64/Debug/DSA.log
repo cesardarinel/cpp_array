@@ -1,0 +1,4 @@
+﻿  DSA_Main.cpp
+  TestSuite.cpp
+  Generating Code...
+C:\Projects\DSA\Apr Attempt\cpp_array\DSA Labs\DSA\DynArray.h(64): error C4716: 'DynArray<int>::operator[]': must return a value
