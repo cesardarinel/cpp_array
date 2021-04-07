@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.27.29110:TargetPlatformVersion=10.0.18362.0:
 Debug|x64|C:\Projects\DSA\Apr Attempt\cpp_array\DSA Labs\|
+=======
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.28.29910:TargetPlatformVersion=10.0.19041.0:
+Debug|x64|D:\Proyectos\Samuel\cpp_array\DSA Labs\|
+>>>>>>> 8afcf269a396f94e86c8cf310462876c5d2ee7fd

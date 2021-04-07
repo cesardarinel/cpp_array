@@ -22,4 +22,8 @@ void BubbleSort(Type* _arr, int _size) {
         n := n - 1
     until not swapped
 end procedure
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 8afcf269a396f94e86c8cf310462876c5d2ee7fd
 }*/

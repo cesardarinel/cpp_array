@@ -1,7 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
+<<<<<<< HEAD
   <ProjectOutputs>C:\Projects\DSA\Apr Attempt\cpp_array\DSA Labs\x64\Debug\DSA.exe</ProjectOutputs>
   <ContentFiles></ContentFiles>
   <SatelliteDlls></SatelliteDlls>
   <NonRecipeFileRefs></NonRecipeFileRefs>
+=======
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\Proyectos\Samuel\cpp_array\DSA Labs\x64\Debug\DSA.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+>>>>>>> 8afcf269a396f94e86c8cf310462876c5d2ee7fd
 </Project>

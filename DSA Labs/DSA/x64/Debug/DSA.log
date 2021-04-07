@@ -1,4 +1,9 @@
 ﻿  DSA_Main.cpp
   TestSuite.cpp
+<<<<<<< HEAD
   Generating Code...
 C:\Projects\DSA\Apr Attempt\cpp_array\DSA Labs\DSA\DynArray.h(64): error C4716: 'DynArray<int>::operator[]': must return a value
+=======
+  Generando código...
+  DSA.vcxproj -> D:\Proyectos\Samuel\cpp_array\DSA Labs\x64\Debug\DSA.exe
+>>>>>>> 8afcf269a396f94e86c8cf310462876c5d2ee7fd
