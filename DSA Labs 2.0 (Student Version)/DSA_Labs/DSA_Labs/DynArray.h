@@ -37,14 +37,14 @@ NOTE: If the unit test is not on, that code will not be compiled!
 #define LAB_1	1
 
 // Individual unit test toggles
-#define LAB1_DYNARRAY_DEFAULT_CTOR						0
-#define LAB1_DYNARRAY_CONSTRUCTOR_WITH_ARGS				0
-#define LAB1_DYNARRAY_BRACKET_OP_READ_ONLY_BUILT_IN		0
-#define LAB1_DYNARRAY_BRACKET_OP_WRITE_BUILT_IN			0
-#define LAB1_DYNARRAY_SIZE								0
-#define LAB1_DYNARRAY_CAPACITY							0
-#define LAB1_DYNARRAY_RESERVE_ZERO						0
-#define LAB1_DYNARRAY_RESERVE_DOUBLE					0
+#define LAB1_DYNARRAY_DEFAULT_CTOR						1
+#define LAB1_DYNARRAY_CONSTRUCTOR_WITH_ARGS				1
+#define LAB1_DYNARRAY_BRACKET_OP_READ_ONLY_BUILT_IN		1
+#define LAB1_DYNARRAY_BRACKET_OP_WRITE_BUILT_IN			1
+#define LAB1_DYNARRAY_SIZE								1
+#define LAB1_DYNARRAY_CAPACITY							1
+#define LAB1_DYNARRAY_RESERVE_ZERO						1
+#define LAB1_DYNARRAY_RESERVE_DOUBLE					1
 #define LAB1_DYNARRAY_RESERVE_VALUE						0
 #define LAB1_DYNARRAY_RESERVE_SMALLER					0
 #define LAB1_DYNARRAY_APPEND_NO_RESIZE					0
@@ -80,7 +80,13 @@ public:
 	// Note: Do not allocate any memory if the _startingCap is 0
 	DynArray(size_t _startingCap = 0) {
 		// TODO: Implement this method
-
+		if (_startingCap != 0) {
+			mArray = new Type[_startingCap];
+		}
+		else{
+			mArray = NULL;
+		}
+		mCapacity = _startingCap;
 	}
 
 	// Destructor
@@ -120,6 +126,7 @@ public:
 	// Return: The item at the specified index (by reference)
 	const Type& operator[](int _index) const {
 		// TODO: Implement this method
+		operator[] = _index;
 	}
 
 	// Overloaded [] operator
@@ -129,6 +136,7 @@ public:
 	// Return: The item at the specified index (by reference)
 	Type& operator[](int _index) {
 		// TODO: Implement this method
+		return mArray[_index];
 	}
 
 	// Get the current number of elements actively being used
@@ -136,6 +144,7 @@ public:
 	// Return: The current number of elements used
 	size_t Size() const {
 		// TODO: Implement this method
+		return mSize;
 	}
 
 	// Get the current capacity of the internal array
@@ -143,6 +152,7 @@ public:
 	// Return: The capacity of the array
 	size_t Capacity() const {
 		// TODO: Implement this method
+		return mCapacity;
 	}
 
 	// Add an item to the end of the array
@@ -161,6 +171,16 @@ public:
 	//	SPECIAL CASE: If mCapacity is 0, then it should be set to 1
 	void Reserve(size_t _newCapacity = 0) {
 		// TODO: Implement this method
+		
+		//Esta explotando aqui
+		mArray[mCapacity] = _newCapacity;
+		if (_newCapacity == 0) {
+			mSize * 2;
+			mCapacity = mCapacity * 2;
+		}
+		if (mCapacity == 0) {
+			mCapacity = 1;
+		}
 	}
 };
 
