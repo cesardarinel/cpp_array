@@ -45,8 +45,8 @@ NOTE: If the unit test is not on, that code will not be compiled!
 #define LAB1_DYNARRAY_CAPACITY							1
 #define LAB1_DYNARRAY_RESERVE_ZERO						1
 #define LAB1_DYNARRAY_RESERVE_DOUBLE					1
-#define LAB1_DYNARRAY_RESERVE_VALUE						0
-#define LAB1_DYNARRAY_RESERVE_SMALLER					0
+#define LAB1_DYNARRAY_RESERVE_VALUE						1
+#define LAB1_DYNARRAY_RESERVE_SMALLER					1
 #define LAB1_DYNARRAY_APPEND_NO_RESIZE					0
 #define LAB1_DYNARRAY_APPEND_RESIZE						0
 #define LAB1_DYNARRAY_CLEAR								0
@@ -82,10 +82,14 @@ public:
 		// TODO: Implement this method
 		if (_startingCap != 0) {
 			mArray = new Type[_startingCap];
+			for (size_t i = 0; i >= _startingCap; i++) {
+				mArray[i] = 0;
+			}
 		}
 		else{
 			mArray = NULL;
 		}
+		mSize = NULL;
 		mCapacity = _startingCap;
 	}
 
@@ -93,6 +97,7 @@ public:
 	//		Cleans up all dynamically allocated memory
 	~DynArray() {
 		// TODO: Implement this method
+		delete []mArray;
 	}
 
 	// Copy constructor
@@ -171,9 +176,8 @@ public:
 	//	SPECIAL CASE: If mCapacity is 0, then it should be set to 1
 	void Reserve(size_t _newCapacity = 0) {
 		// TODO: Implement this method
-		
-		//Esta explotando aqui
-		mArray[mCapacity] = _newCapacity;
+
+		//Arreglar los punteros del arreglo
 		if (_newCapacity == 0) {
 			mSize * 2;
 			mCapacity = mCapacity * 2;
@@ -181,6 +185,10 @@ public:
 		if (mCapacity == 0) {
 			mCapacity = 1;
 		}
+		mArray = new Type[mCapacity];
+		/*for (size_t i = 0; i <= mSize; i++ ) {
+			mArray[i] = _newCapacity;
+		}*/
 	}
 };
 
