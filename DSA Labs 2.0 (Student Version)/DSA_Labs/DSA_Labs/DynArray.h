@@ -103,8 +103,12 @@ public:
 	// Copy constructor
 	//		Used to initialize one object to another
 	// In:	_da				The object to copy from
-	DynArray(const DynArray& _copy) : mArray(nullptr) {
+	DynArray(const DynArray& _copy){
 		// TODO: Implement this method
+		mSize = _copy.mSize;
+		mCapacity = _copy.mCapacity;
+		for (size_t i = 0; i < mSize; i++)
+			mArray[i] = _copy.mArray[i];
 	}
 
 	// Assignment operator
@@ -115,6 +119,11 @@ public:
 	//		This allows us to daisy-chain
 	DynArray& operator=(const DynArray& _assign) {
 		// TODO: Implement this method
+		mSize = _assign.mSize;
+		mCapacity = _assign.mCapacity;
+		for (size_t i = 0; i < _assign.mSize; i++)
+			mArray[i] = _assign.mArray[i];
+		return *this;
 	}
 
 	// Clear
@@ -122,6 +131,7 @@ public:
 	//		Sets all data members back to default values
 	void Clear() {
 		// TODO: Implement this method
+		//delete []mArray;
 	}
 
 	// Overloaded [] operator
@@ -131,7 +141,7 @@ public:
 	// Return: The item at the specified index (by reference)
 	const Type& operator[](int _index) const {
 		// TODO: Implement this method
-		operator[] = _index;
+		return mArray[_index];
 	}
 
 	// Overloaded [] operator
@@ -166,6 +176,7 @@ public:
 	// In:	_data			The item to be added
 	void Append(const Type& _data) {
 		// TODO: Implement this method
+
 	}
 
 	// Resizes the internal array, and copies all data over
